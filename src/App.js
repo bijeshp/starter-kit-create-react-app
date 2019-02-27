@@ -1,28 +1,39 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+//@flow
+import * as React from 'react';
+import store from './store';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import Bootstrap from './components/hoc/Bootstrap';
+import AuthenticatedRoute from './routes/AuthenticatedRoute';
+import { routes } from './routes';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+import './App.scss';
+
+type Props = {};
+class _App extends React.Component<Props> {
+	render() {
+		return (
+			<Provider store={store}>
+				<BrowserRouter>
+					<Bootstrap>
+						<Switch>
+							{routes.map((item: any, index: string) => {
+								return (
+									<AuthenticatedRoute
+										key={index}
+										path={item.path}
+										exact={item.exact}
+										component={item.component}
+										store={store}
+									/>
+								);
+							})}
+						</Switch>
+					</Bootstrap>
+				</BrowserRouter>
+			</Provider>
+		);
+	}
 }
 
-export default App;
+export const App = _App;
