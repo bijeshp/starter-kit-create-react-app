@@ -1,5 +1,6 @@
 {
 	"name": "starter-kit-create-react-app",
+	"author": "Bijesh Purushan <bijeshp009@gmail.com>",
 	"version": "1.0.0",
 	"dependencies": {
 		"axios": "^0.18.0",
