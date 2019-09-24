@@ -1,7 +1,7 @@
 // @flow
 
 import { put, takeLatest } from 'redux-saga/effects';
-// import axios from 'axios';
+import API from 'api';
 
 import { SAMPLE_ACTION } from '../actions/action.types';
 
