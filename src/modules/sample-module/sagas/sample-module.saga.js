@@ -16,6 +16,6 @@ function* sampleAction(action: Object) {
 }
 
 // Setup the Watcher Saga
-export default function* EditorSaga(): Generator<*, *, *> {
+export default function* SampleModuleSaga(): Generator<*, *, *> {
 	yield takeLatest(SAMPLE_ACTION, sampleAction);
 }

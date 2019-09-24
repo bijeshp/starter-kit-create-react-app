@@ -1,7 +1,7 @@
-import * as EditorSagas from '../modules/editor/sagas';
+import * as SampleModuleSagas from '../modules/sample-module/sagas';
 
 const sagas = {
-	...EditorSagas,
+	...SampleModuleSagas,
 };
 
 // Run Sagas

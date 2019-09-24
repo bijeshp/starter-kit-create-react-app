@@ -4,6 +4,7 @@ import { Route, Redirect } from 'react-router-dom';
 import ExcludedRoutes from '../config/ExcludedRoutes';
 
 const isAuthenticated = (store: any, props: any) => {
+	// Use the required properties  to validate the routing
 	const currentPath = props.match.path;
 	if (currentPath === '/home' || ExcludedRoutes.indexOf(currentPath) >= 0) return true;
 	return false;

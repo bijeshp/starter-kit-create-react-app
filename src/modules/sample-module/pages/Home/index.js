@@ -11,24 +11,24 @@ type Props = {};
 
 type State = {};
 
-class EditorHome extends React.PureComponent<Props, State> {
+class SampleModuleHome extends React.PureComponent<Props, State> {
 	state = {};
 
 	componentWillMount() {}
 
 	render() {
 		return (
-			<section className="page editor-home">
-				<h1> Editor Home</h1>
+			<section className="page sample-module-home">
+				<h1> Sample  Home</h1>
 				<Button />
 			</section>
 		);
 	}
 }
 // Mapping Props and State.
-const _EditorHome = connect(
+const _SampleModuleHome = connect(
 	(state) => ({}),
 	(dispatch) => bindActionCreators({ ...Actions }, dispatch),
-)(EditorHome);
+)(SampleModuleHome);
 
-export { _EditorHome as EditorHome };
+export { _SampleModuleHome as SampleModuleHome };

@@ -3,7 +3,7 @@ import * as Actions from './actions/action.types';
 
 const initialState = {};
 
-const EditorReducer = (state: Object = initialState, action: Object) => {
+const SampleModuleReducer = (state: Object = initialState, action: Object) => {
 	switch (action.type) {
 		case Actions.SAMPLE_ACTION: {
 			let newState = { ...state, action: Actions.SAMPLE_ACTION };
@@ -14,4 +14,4 @@ const EditorReducer = (state: Object = initialState, action: Object) => {
 	}
 };
 
-export default EditorReducer;
+export default SampleModuleReducer;

@@ -21,7 +21,7 @@
 	"scripts": {
 		"analyze": "source-map-explorer build/static/js/main.*",
 		"start": "react-scripts start",
-		"serve:build": "react-scripts build && serve -l 3000 -s build",
+		"serve:build": "react-scripts build && serve -l 3002 -s build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",

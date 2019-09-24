@@ -1,2 +1,2 @@
-import { EditorRoutes } from '../modules/editor/routes';
-export const routes = [...EditorRoutes];
+import { SampleModuleRoutes } from '../modules/sample-module/routes';
+export const routes = [...SampleModuleRoutes];
