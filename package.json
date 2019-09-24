@@ -1,7 +1,6 @@
 {
-	"name": "glue-web",
-	"version": "0.1.0",
-	"private": true,
+	"name": "starter-kit-create-react-app",
+	"version": "1.0.0",
 	"dependencies": {
 		"axios": "^0.18.0",
 		"flow-bin": "^0.93.0",
@@ -21,6 +20,7 @@
 	"scripts": {
 		"analyze": "source-map-explorer build/static/js/main.*",
 		"start": "react-scripts start",
+		"serve:build": "react-scripts build && serve -l 3000 -s build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
