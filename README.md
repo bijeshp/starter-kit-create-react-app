@@ -8,6 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Static Type Checking :Flow
 - REST API handling :Axios
 
+## Directory Structure
+<img width="831" alt="Screen Shot 2019-09-24 at 3 14 52 PM" src="https://user-images.githubusercontent.com/7260229/65555185-b3143f80-dee0-11e9-92ea-47f90fa4da83.png">
+
 ## Development GuideLines
 
 Basic Conventions
