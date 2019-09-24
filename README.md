@@ -1,7 +1,7 @@
 # Starter Kit CRA
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). In addition to the standard capabilities this is fully configured with developer productivity tools and the additional technologies from the react eco system
 
-- Technologies and Libraries
+## Technologies and Libraries
 - Application State : Redux
 - Async Data Management : Redux Saga
 - Declarative Routing : DOM bindings for React Router react-router-dom
